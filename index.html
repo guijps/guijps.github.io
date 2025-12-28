@@ -1,99 +1,72 @@
-<!DOCTYPE html >
-<meta http-equiv="Content-tyupe" content="text/html; charset=utf-8">
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
     <header>
-        <style>
-            body{
-                background-color:#111426;
-            }
-            #Fundo{
-                background-image: url('imagens/moon-2372573_1920.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            #AnuncioDoJogo{
-                background-color: #260259;
-               
-            }
-            
-            h1{color:#D9CBA0;text-align:left;background-color: #260259;} 
-            h4{text-align:left;color:#D9CBA0;background-color: #260259;}
-            p{text-align:left;color:#D9CBA0;background-color: #260259;}
-        </style>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Discover my projects, interests, and more about me!</p>
     </header>
-    <body>
-        <script>alert('Hello! This site is really out of data, I\'m currently working in a update, please dont be shocked.')</script>
-        <div id="Fundo">
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <a href="#interests">Interests</a>
+        <a href="https://github.com/guijps" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/guilherme-amad" target="_blank">LinkedIn</a>
+    </nav>    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a brazillian enginneer, graduated by the <a href="https://www.poli.usp.br/departamentos/pea-energia-e-automacao-eletricas/">University of São Paulo on Elctrical Engineering with enphacis on energy and automation (PEA)</a> and during my graduation I also completed a Double Degree program receiving a master's degree in Engineering on Embedded Systems and Connected Devices by  <a href="https://phelma.grenoble-inp.fr/en/studies/master-s-degree-in-engineering-grenoble-inp-phelma-embedded-systems-and-connected-devices-seoc#page-presentation">Grenoble INP-École Nationale Supérieure de Physique, Électronique et Matériaux (Phelma).</a>
+        Currently I'm a Software FullStack Engineer consultant working in finance at Paris - Ile de France.
+        </p>
+    </section>
+    <section id="interests">
+        <h2>My Interests</h2>
+        <p>For now I'm trying to learn more about:</p>
+        <ul>
+            <li>Neural Networks: on FPGA and C++</li>
+            <li> ESP32 usage on IoT environments</li>
+            <li>Game Design and Patterns</li>
+            <li>Kubernetes/Docker</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p>Here are some of the projects I have worked on:</p>
+        <ul>
+            <li>
+                <strong>My First Game Jam (2025):</strong> 
+                <p>First time partcipating in a Game Jam, I used Godot(Open Source Game Engine), C# and Pixelorama(Open Source pixel art tool),<a href="https://github.com/guijps/game-off-jam">more info in github repository</a>  </p>
+            </li>
+            <li>
+                <strong>Esp32 projects - ongoing:</strong> 
+                <p>On the IoT context, I wanted to know more about how the 'smart' devices communicate with them selfs and challenge myself into a simple project about it. Using a ESP32 and a <a href="https://caninosloucos.org/en/labrador-32-en/">Labrador (Caninos Loucos)</a>. The goal is to test diferent ways of comunicating both devices to light a lamp.<a href="https://github.com/guijps/esp-32-sample">more info on the github repository</a></p>
+            </li>
+            <li>
+                <strong>Handwritten Number Recognition - Neural Networks-Python/Pythorch:</strong> <a href="https://github.com/guijps/neural-network-experiment-python">First Game</a>
+                <p>Description: <em>Add a description here...</em></p>
+            </li>
+            <li>
+                <strong>Handwritten Number Recognition - Neural Networks - C++ from Scratch:</strong> <a href="https://github.com/guijps/neural-network-experiment">C++</a>
+                <p>Description: <em>Add a description here...</em></p>
+            </li>
+            <li>
+                <strong>VIDAOdonto - Firmware and Anesteseology simulator:</strong>
+                <p>Description: <em>Add a description here...</em> <a href="https://github.com/guijps/OldSeringa">for more info check the </a></p>
+            </li>
+            <li>
+                <strong>My First Game 1(2020):</strong> <a href="page-game.html">Moon Game</a>
+                <p>Description: <em>Add a description here...</em></p>
+            </li>
+        </ul>
+    </section>
 
-            <h1 > Seja Bem Vindo!</h1>
-            <h4> Meu nome é Guilherme Amad, sou Graduando em Engenharia Elétrica.
-                <br>Criei o site pra facilitar o acesso a informação que eu obtive pelas minhas experiencias em criar jogos Unity 3D.</h4>
-                
-            <div id= "game">
-            
-                <h1>Meu Primeiro Jogo</h1>
-                 <h1 style= "position: center;"><a href="Jogo.html">Click here to open the game in your Navigator</a></h1>
-                <img src="imagens\Lua.png" alt="MeuPrimeiroJogo" style="background-color:#260259;display: block;margin-left: auto;margin-right: auto; ">
-               <div id="AnuncioDoJogo"> <p > Esse não é de fato o meu primeiro jogo, se for olhar meu passado existem inumeros projetos no unity,mas eles eram uma espécie de Frankestein.
-                Sem planejamento eu ia fazendo gambiarras e o resultado era um verdadeiro "2077".Assim, "MeuPrimeiroJogo" foi um ultimato, vou fazer um projeto e no fim verei o que aprendi 
-                e o que devo aprender. Essas considerações estão a seguir, com dicas para quem está começando assim como eu.
-
-                </p>
-        
-                <h2>Coisas que aprendi</h2>
-                <ul>
-                    <li>
-                        1°: Organização.
-                        <p> É certamente um ponto fraco, em que devo ficar atento. Tanto nos arquivos do projeto quanto nos nomes de atributos e scripts ,
-                             Organização é fundamental. Sim, levem isso a sério, não esperem esgotar as letras do alfabeto para dar nomes ás variaveis.</p>                         
-                    </li>
-                    <li>
-                        2°: Conteúdo.
-                        <p>
-                            Quando criança eu via um porco brincando com barro e logo pensei "barro serve para sujar". 
-                            Com isso, sempre que eu via barro e gostaria de me divertir...eu brincava de porquinho.
-                            O tempo passou, vi que existiam filtros de barro...sempre que eu via barro e gostava de me divertir, agora, eu continuava a brincar de porquinho afinal, qual a graça de um filtro ?
-                            Bom, anos se passaram (já nao tenho  idade para brincar de porquinho) foi então que vi no youtube a terceira funcionalidade do barro... sim, me refiro ás mansoes, piscinas xacaras, carros e afins feitos pelo <a href="https://www.youtube.com/channel/UCGPYR4JXRDyYpHZXG6vZ_1Q">Mr.Tfue</a>(espero que nao tenha pensado em outra coisa), quando eu olho pra barro agora tenho uma ideia completamente diferente.Acredite se quiser, o mesmo se aplica nas game engines.
-                             <br>Para extrair o maximo de sua ideia, você precisa ter noção do que a engine pode fazer.Para eu ter essa noção assisti varios videos diria que 60% do que aprendi sobre unity foram desses 3 canais: 
-                            <a  href= "https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA">Brackeys</a>,
-                            <a href= "https://www.youtube.com/channel/UCIabPXjvT5BVTxRDPCBBOOQ">Dani</a> e o primordial 
-                            <a href= "https://www.youtube.com/channel/UC1s2NpVU-gw8_v3VR3RPZSg ">GameDev das Galaxias(primeiro canal que vi e o unico BR da lista).</a>
-                             
-                        </p>
-                    </li>
-                    <li>
-                        3°: varias coisinhas 
-                        <p>  Use o que preferir, mas anotar ideias para serem implementadas ou arquivadas e erros a serem corrigidos. 
-                            Alguns erros podem ser aproveitados e se tornarem mecanicas!.
-                            Daquela frase muito repetida: "Só se aprende tentando!",  Eu sou um grande fã...aprender o basico é importante, mas ter a audacia de ir além é uma virtude. </p>
-                    </li>
-                </ul>
-                <h2>Coisas que quero aprender </h2>
-                <ul>
-                    <li>
-                        Efeitos visuais
-                        <p>
-                            Vou tentar explorar tanto o Unity particle sistem e Post processing quanto as animações(moedas flutuando, chamas soltando fumaça um brilho nas fases etc).
-                        </p>
-                    </li>
-                    <li>
-                        Jogo "eterno"
-                        <p> Sabe os jogos geralmente de mobile que aparentam ter fases infinitas?  Então, gostaria de saber os conceitos que regem a semente dessas fases.</p>
-                    </li>
-                    <li>
-                        Som
-                        <p>Eu tive um problema com a ferramenta que planejei usar então ignorei o som nesse projeto. Obs: o nome da ferramenta é <a href ="https://www.drpetter.se/project_sfxr.html">sfxr<a></p>
-                    </li>
-                    <li>
-                        Boss
-                        <p> Quando eu pensei em fazer um boss, muito me veio a cabeça mas na hora de implementar foi desanimador, será um belo desafio</p>
-                    </li>
-                </ul>
-                
-                <h4>Ao baixar o Build3.0.zip você deve arrastar para uma pasta de sua escolha, extrair o arquivo compactado e excecutar o "MeuPrimeiroJogo.exe".</h4>
-            
-            </div>
-        </div>
-    </body>
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
 </html>
